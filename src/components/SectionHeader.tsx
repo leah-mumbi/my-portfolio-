@@ -7,7 +7,7 @@ type SectionHeaderProps = {
 
 export default function SectionHeader({ badgeText, description }: SectionHeaderProps) {
     return (
-        <div className="flex flex-col items-center text-center">
+        <div className="flex flex-col items-center text-center pb-12">
             <Badge variant="secondary">{badgeText}</Badge>
             {description && <p className="mt-4">{description}</p>}
         </div>
