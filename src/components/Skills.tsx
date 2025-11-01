@@ -1,11 +1,10 @@
-import { Badge } from "./ui/badge";
 import skills from "@/constants/skills";
+import SectionHeader from "./SectionHeader";
 
 export default function Skills() {
     return (
-        <section className="flex flex-col items-center justify-center" id="skills">
-            <Badge variant="secondary">Skills</Badge>
-            <p className="mt-4">The skills, tools and technologies I am really good at:</p>
+        <section className="flex flex-col items-center justify-center py-24" id="skills">
+            <SectionHeader badgeText="Skills" description="The skills, tools and technologies I am really good at:" />
             <div className="mt-12">
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-8 gap-x-24 gap-y-12 ">
                     {skills.map((skill) => (

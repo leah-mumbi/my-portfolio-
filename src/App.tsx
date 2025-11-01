@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className='flex flex-col px-20'>
         <Hero />
         <About />
         <Skills />
