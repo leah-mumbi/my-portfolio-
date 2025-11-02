@@ -31,9 +31,9 @@ export default function Contact() {
       />
 
       <div className="w-full max-w-3xl mt-8 text-center">
-        <div className="bg-white rounded-xl shadow-sm py-8 px-6 grid gap-6 place-items-center">
+        <div className="bg-white rounded-xl shadow-sm py-8 px-6 grid gap-6">
           {/* Email row */}
-          <div className="w-full max-w-xl grid grid-cols-[auto_1fr_auto] items-center gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-[auto_1fr_auto] items-center gap-4">
             <div className="p-3 rounded-md bg-gray-100 text-gray-700">
               <HiOutlineMail className="w-5 h-5" aria-hidden="true" />
             </div>
@@ -64,7 +64,7 @@ export default function Contact() {
           </div>
 
           {/* Phone row */}
-          <div className="w-full max-w-xl grid grid-cols-[auto_1fr_auto] items-center gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-[auto_1fr_auto] items-center gap-4">
             <div className="p-3 rounded-md bg-gray-100 text-gray-700">
               <FiPhone className="w-5 h-5" aria-hidden="true" />
             </div>
@@ -98,7 +98,7 @@ export default function Contact() {
             You may also find me on these platforms!
           </p>
 
-          <div className="flex items-center gap-6 text-gray-600 text-xl">
+          <div className="flex items-center justify-center gap-6 text-gray-600 text-xl">
             <a
               href="https://github.com/leah-mumbi"
               target="_blank"
