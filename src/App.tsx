@@ -1,5 +1,6 @@
 
 import './App.css'
+import { ThemeProvider } from './components/theme-provider'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -13,7 +14,7 @@ import Footer from './components/Footer'
 function App() {
 
   return (
-    <>
+    <ThemeProvider defaultTheme="system">
       <Navbar />
       <main className='flex flex-col'>
         <Hero />
@@ -25,7 +26,7 @@ function App() {
         <Contact />
         <Footer />
       </main>
-    </>
+      </ThemeProvider>
   )
 }
 

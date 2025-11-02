@@ -23,7 +23,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="bg-gray-50 flex flex-col items-center justify-center py-24 px-6 sm:px-20"
+      className="bg-gray-50 dark:bg-[#030712] flex flex-col items-center justify-center py-24 px-6 sm:px-20"
     >
       <SectionHeader
         badgeText="Get in touch"
@@ -31,7 +31,7 @@ export default function Contact() {
       />
 
       <div className="w-full max-w-3xl mt-8 text-center">
-        <div className="bg-white rounded-xl shadow-sm py-8 px-6 grid gap-6">
+        <div className="py-8 px-6 grid gap-6">
           {/* Email row */}
           <div className="grid grid-cols-1 sm:grid-cols-[auto_1fr_auto] items-center gap-4">
             <div className="p-3 rounded-md bg-gray-100 text-gray-700">
@@ -41,7 +41,7 @@ export default function Contact() {
             <div className="text-left">
               <button
                 onClick={() => handleCopy("email", email)}
-                className="text-lg font-medium text-gray-800 hover:underline"
+                className="text-lg font-medium text-gray-800 dark:text-[#F9FAFB] hover:underline"
                 aria-label="Copy email"
               >
                 {email}
@@ -51,7 +51,7 @@ export default function Contact() {
             <div className="flex items-center gap-2 justify-end">
               <button
                 onClick={() => handleCopy("email", email)}
-                className="p-2 rounded-md text-gray-500 hover:bg-gray-100"
+                className="p-2 rounded-md text-gray-500 dark:text-[#F9FAFB] hover:bg-gray-100"
                 aria-label="Copy email to clipboard"
                 title="Copy email"
               >
@@ -72,7 +72,7 @@ export default function Contact() {
             <div className="text-left">
               <button
                 onClick={() => handleCopy("phone", phone)}
-                className="text-lg font-medium text-gray-800 hover:underline"
+                className="text-lg font-medium text-gray-800 dark:text-[#F9FAFB] hover:underline"
                 aria-label="Copy phone"
               >
                 {phone}
@@ -82,7 +82,7 @@ export default function Contact() {
             <div className="flex items-center gap-2 justify-end">
               <button
                 onClick={() => handleCopy("phone", phone)}
-                className="p-2 rounded-md text-gray-500 hover:bg-gray-100"
+                className="p-2 rounded-md text-gray-500 dark:text-[#F9FAFB] hover:bg-gray-100"
                 aria-label="Copy phone to clipboard"
                 title="Copy phone"
               >

@@ -67,7 +67,7 @@ export default function Experience() {
     return (
         <section
             id="experience"
-            className="bg-gray-50 flex flex-col items-center justify-center py-24 px-6"
+            className="bg-gray-50 dark:bg-[#111827] flex flex-col items-center justify-center py-24 px-6"
         >
             <SectionHeader badgeText="Experience" description="Here is a quick summary of my most recent experiences:" />
 
@@ -75,11 +75,11 @@ export default function Experience() {
                 {experiences.map((exp, idx) => (
                     <article
                         key={idx}
-                        className="bg-white rounded-xl shadow-sm p-6 flex flex-col sm:flex-row items-start gap-6"
+                        className="bg-white dark:bg-[#1F2937] rounded-xl shadow-sm p-6 flex flex-col sm:flex-row items-start gap-6"
                         role="group"
                         aria-labelledby={`experience-${idx}-role`}
                     >
-                        <div className="flex-shrink-0 w-full sm:w-28 flex items-center justify-center">
+                        <div className="shrink-0 w-full sm:w-28 flex items-center justify-center">
                             {/* company logo */}
                             <div className="w-20 h-8">
                                 {exp.logo}
@@ -89,17 +89,17 @@ export default function Experience() {
                         <div className="flex-1">
                             <div className="flex items-start justify-between gap-4">
                                 <div>
-                                    <h3 id={`experience-${idx}-role`} className="text-sm font-semibold text-gray-800">
+                                    <h3 id={`experience-${idx}-role`} className="text-sm font-semibold text-gray-800 dark:text-[#F9FAFB]">
                                         {exp.role}
                                     </h3>
                                 </div>
 
-                                <div className="text-xs text-gray-500 whitespace-nowrap">
+                                <div className="text-xs text-gray-500 dark:text-[#d1d5db] whitespace-nowrap">
                                     {exp.date}
                                 </div>
                             </div>
 
-                            <ul className="mt-3 list-disc list-inside text-sm text-gray-600 space-y-2">
+                            <ul className="mt-3 list-disc list-inside text-sm text-gray-600 dark:text-[#d1d5db] space-y-2">
                                 {exp.bullets.map((b, i) => (
                                     <li key={i}>{b}</li>
                                 ))}

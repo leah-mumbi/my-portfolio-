@@ -32,7 +32,7 @@ export default function Testimonials() {
     return (
         <section
             id="testimonials"
-            className="bg-gray-50 flex flex-col items-center justify-center py-24 px-6"
+            className="bg-gray-50 dark:bg-[#111827] flex flex-col items-center justify-center py-24 px-6"
         >
             <SectionHeader badgeText="Testimonials" description="Nice things people have said about me:" />
 
@@ -41,7 +41,7 @@ export default function Testimonials() {
                     {testimonials.map((t, i) => (
                         <article
                             key={i}
-                            className="relative bg-white rounded-xl shadow-sm p-8 text-center flex flex-col items-center"
+                            className="relative bg-white dark:bg-[#1F2937] rounded-xl shadow-sm p-8 text-center flex flex-col items-center"
                             aria-labelledby={`testimonial-${i}-name`}
                         >
                             {/* Avatar */}
@@ -59,15 +59,15 @@ export default function Testimonials() {
                                 </div>
                             </div>
 
-                            <blockquote className="text-sm text-gray-600 leading-relaxed mb-6 px-2">
+                            <blockquote className="text-sm text-gray-600 dark:text-[#D1D5DB] leading-relaxed mb-6 px-2">
                                 {t.quote}
                             </blockquote>
 
                             <footer className="mt-auto text-center">
-                                <p id={`testimonial-${i}-name`} className="font-semibold text-gray-800">
+                                <p id={`testimonial-${i}-name`} className="font-semibold text-gray-800 dark:text-[#F9FAFB]">
                                     {t.name}
                                 </p>
-                                <p className="text-xs text-gray-500">
+                                <p className="text-xs text-gray-500 dark:text-[#D1D5DB]">
                                     {t.role}
                                     {t.company ? ` — ${t.company}` : ""}
                                 </p>

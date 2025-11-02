@@ -3,7 +3,7 @@ import leah from "../assets/leah.jpg";
 
 export default function About() {
   return (
-    <section className="bg-gray-50 flex flex-col items-center justify-center py-24" id="about">
+    <section className="bg-gray-50 flex flex-col items-center justify-center py-24 dark:bg-[#111827]" id="about">
       <SectionHeader badgeText="About me" />
 
       <div className="flex flex-col md:flex-row items-start max-w-6xl w-full mt-12 px-6 md:px-0 gap-10">
@@ -31,11 +31,11 @@ export default function About() {
 
         {/* Content column */}
         <div className="w-full md:w-1/2 md:pl-12 space-y-6 text-gray-700">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-[#F9FAFB]">
             Curious about me? Here you have it:
           </h2>
 
-          <div className="prose prose-sm md:prose-base max-w-none text-gray-600">
+          <div className="prose prose-sm md:prose-base max-w-none text-gray-600 dark:text-[#D1D5DB]">
             <p>
               I’m a passionate front-end web developer who enjoys building clean,
               responsive, and user-friendly websites. I love turning design ideas
@@ -75,7 +75,7 @@ export default function About() {
 
             <p>Finally, some quick bits about me.</p>
 
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-1 list-disc list-inside text-gray-700">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-1 list-disc list-inside text-gray-700 dark:text-[#D1D5DB]">
               <li>B.E. in Computer Engineering</li>
               <li>Avid learner</li>
               <li>Full time freelancer</li>

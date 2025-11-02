@@ -6,34 +6,34 @@ export default function Hero() {
     return (
         <section
             id="home"
-            className="flex flex-col-reverse md:flex-row items-center justify-between py-20 px-8 md:px-20 bg-white"
+            className="flex flex-col-reverse md:flex-row items-center justify-between py-20 px-8 md:px-20 bg-white dark:bg-[#030712]"
         >
             {/* Left - text */}
             <div className="flex-1 max-w-2xl mt-8 md:mt-0">
-                <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
-                    Hi, I’m <span className="text-gray-900">Sagar</span>{" "}
+                <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 dark:text-[#F9FAFB] leading-tight">
+                    Hi, I’m <span className="text-gray-900 dark:text-[#F9FAFB]">Sagar</span>{" "}
                     <span aria-hidden="true">👋</span>
                 </h1>
 
-                <p className="mt-4 text-gray-600 text-sm md:text-base max-w-2xl">
+                <p className="mt-4 text-gray-600  dark:text-[#D1D5DB] text-sm md:text-base max-w-2xl">
                     I'm a full stack developer (React.js & Node.js) with a focus on creating
                     fast, accessible and visually appealing web applications. I care about
                     building user-centered experiences and clean, maintainable code.
                 </p>
 
                 <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:gap-6 gap-3">
-                    <div className="flex items-center text-gray-700">
+                    <div className="flex items-center text-gray-700 dark:text-[#D1D5DB]">
                         <MdLocationOn className="text-blue-600 mr-2 text-xl" aria-hidden="true" />
                         <span className="text-sm">Ahmedabad, India</span>
                     </div>
 
-                    <div className="flex items-center text-sm text-gray-700">
+                    <div className="flex items-center text-sm text-gray-700 dark:text-[#D1D5DB]">
                         <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-2" aria-hidden="true" />
                         <span>Available for new projects</span>
                     </div>
                 </div>
 
-                <div className="mt-6 flex items-center gap-4 text-gray-600 text-xl">
+                <div className="mt-6 flex items-center gap-4 text-gray-600 dark:text-[#D1D5DB] text-xl">
                     <a
                         href="https://github.com/leah-mumbi"
                         target="_blank"
