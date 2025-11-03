@@ -1,15 +1,34 @@
-import { Moon, Sun } from "lucide-react";
+import { Menu, MoonStar, Sun, X } from "lucide-react";
 import { Button } from "./ui/button";
 import { useTheme } from "./theme-provider";
+import { useState } from "react";
+import Sidebar from "./Sidebar";
 
 export default function Navbar() {
     const { theme, setTheme } = useTheme();
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleSidebar = () => {
+        const sidebar = document.getElementById("sidebar");
+        if (sidebar) {
+            sidebar.style.transform = isOpen ? 'translateX(-100%)' : 'translateX(0)';
+            setIsOpen(!isOpen);
+        }
+    }
+
+    const closeSidebar = () => {
+        const sidebar = document.getElementById("sidebar");
+        if (sidebar) {
+            sidebar.style.transform = 'translateX(-100%)';
+            setIsOpen(false);
+        }
+    }
 
     return (
-        <header className="top-0 left-0 w-full p-4 bg-white dark:bg-[#030712] transition-colors duration-300">
-            <div className="flex justify-between items-center">
+        <header className="fixed top-0 left-0 w-full p-4 bg-white dark:bg-[#030712] transition-colors duration-300 z-40">
+            <div className="flex justify-between items-center relative">
                 <h3 className="text-2xl font-bold dark:text-white">&lt;SS/&gt;</h3>
-                <div className="flex items-center gap-6">
+                <div className=" gap-6 hidden md:flex md:items-center">
                     <ul className="flex gap-6 items-center text-gray-600 dark:text-gray-300 font-inter-medium">
                         <li>
                             <a href="#about" className="hover:text-gray-900 dark:hover:text-white transition-colors">About</a>
@@ -31,14 +50,23 @@ export default function Navbar() {
                             onClick={() => setTheme('light')}
                         />
                     ) : (
-                        <Moon 
+                        <MoonStar 
                             className="cursor-pointer text-gray-600 hover:text-gray-900 transition-colors" 
                             onClick={() => setTheme('dark')}
                         />
                     )}
                     <Button variant="default" size="sm">Download CV</Button>
                 </div>
+                <div className="md:hidden">
+                    {isOpen ? (
+                        <X className="cursor-pointer text-gray-600 dark:text-gray-300" onClick={toggleSidebar}/>
+                    ) : (
+                        <Menu className="cursor-pointer text-gray-600 dark:text-gray-300" onClick={toggleSidebar}/>
+                    )}
+                </div>
             </div>
+            <Sidebar isOpen={isOpen} onClose={closeSidebar} />
+
         </header>
     );
 }
