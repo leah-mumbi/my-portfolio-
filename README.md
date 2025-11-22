@@ -1,73 +1,89 @@
-# React + TypeScript + Vite
+🌐 Leah Mumbi — Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and fully interactive developer portfolio built using React, TypeScript, and Vite.
+This portfolio highlights my skills, projects, experience, and achievements — including dark/light mode, smooth animations, mobile optimization, and clean UI components.
 
-Currently, two official plugins are available:
+🚀 Features
+⭐ Modern UI
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Clean, minimal, and professional layout
 
-## React Compiler
+Dark & Light theme toggle
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Fully responsive on all devices
 
-## Expanding the ESLint configuration
+🎨 Tech-Driven Components
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Reusable React + TypeScript components
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Tailwind CSS styling
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+ShadCN UI elements (buttons, sections, cards)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+📂 Project Showcases
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Projects highlighted include:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Netflix Clone (HTML, CSS, JS)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Choco Melt Gamified Adventure – a margarine brand game for kids
+
+POS System UI (PHP + MySQL — frontend preview)
+
+Grocery List App (JavaScript)
+
+🤝 Testimonials
+
+Includes real feedback adapted from:
+
+Mentors
+
+Internship supervisors
+
+Team members from past projects
+
+🛠️ Tech Stack
+Technology	Usage
+React	UI components & architecture
+TypeScript	Strict typing & reliability
+Vite	Build tool & fast dev environment
+Tailwind CSS	Styling
+ShadCN UI	Components
+Lucide Icons	Navbar & UI icons
+📸 Screenshots
+
+Add your screenshots here:
+Example:
+
+/screenshots
+  ├── home-light.png
+  ├── home-dark.png
+  ├── projects-section.png
+
+⚙️ Installation & Setup
+1️⃣ Clone the repository
+git clone https://github.com/yourusername/your-portfolio.git
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Start development server
+npm run dev
+
+4️⃣ Build for production
+npm run build
+
+📬 Contact
+
+Leah Mumbi
+
+GitHub: https://github.com/leah-mumbi
+
+LinkedIn: https://www.linkedin.com/in/leah-mumbi
+
+
+✔️ Final Notes
+
+This portfolio is continuously evolving as I grow my skills in:
+React · TypeScript · UI/UX · APIs · JavaScript · PHP · MySQL · Design Systems
+
