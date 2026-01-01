@@ -1,4 +1,4 @@
-    import { Menu, MoonStar, Sun, X } from "lucide-react";
+import { Menu, MoonStar, Sun, X } from "lucide-react";
 import { Button } from "./ui/button";
 import { useTheme } from "./theme-provider";
 import { useState } from "react";
@@ -27,7 +27,12 @@ export default function Navbar() {
     return (
         <header className="fixed top-0 left-0 w-full p-4 bg-white dark:bg-[#030712] transition-colors duration-300 z-40">
             <div className="flex justify-between items-center relative">
-                <h3 className="text-2xl font-bold dark:text-white">&lt;SS/&gt;</h3>
+                {/* Option A: Plain text name */}
+                <h3 className="text-2xl font-bold dark:text-white">Leah Mumbi</h3>
+
+                {/* Option B: small logo image (uncomment to use)
+                <img src="/logo-small.png" alt="Leah logo" className="h-8 w-auto" />
+                */}
                 <div className="gap-6 hidden md:flex md:items-center">
                     <ul className="flex gap-6 items-center text-gray-600 dark:text-gray-300 font-inter-medium">
                         <li>
