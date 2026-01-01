@@ -17,7 +17,7 @@ export default function Contact() {
     }
   };
 
-  const email = "mumbileh254@gmail.com";
+  const email = "mumbileah254@gmail.com";
   const phone = "+254 707 707 223";
 
   return (
